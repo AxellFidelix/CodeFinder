@@ -1,5 +1,8 @@
 .fundo{
     background:linear-gradient(#ffffff, #bebebe);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 /*Estilos para o Menu*/
 .menu{
