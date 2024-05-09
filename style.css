@@ -1,0 +1,67 @@
+/* Estilos para a tag main */
+main {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Alinha os itens verticalmente */
+}
+
+/* Estilos para a classe apresentar */
+.apresentar {
+    padding-bottom: 2vh; /* Reduz o espaçamento inferior */
+    font-size: 2vh; /* Reduz o tamanho da fonte */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Estilos para a classe nome */
+.nome {
+    text-align: center;
+    padding-bottom: 2vh; /* Reduz o espaçamento inferior */
+    font-size: 4vh; /* Reduz o tamanho da fonte */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Estilos para a classe sobre */
+.sobre {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Estilos para a classe habilidades */
+.habilidades {
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos para as imagens dentro da classe habilidades */
+.habilidades > img {
+    padding: 1vh; /* Adiciona espaçamento entre as imagens */
+}
+
+/* Efeito de aumento ao passar o mouse sobre as imagens */
+.habilidades > img:hover {
+    height: 60px;
+    width: 60px;
+}
+
+/* Estilos para a classe foto */
+.foto {
+    border-radius: 50%; /* Torna a imagem circular */
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+    height: auto; /* Permite que a altura da imagem seja ajustada automaticamente */
+    max-width: 400px; /* Define a largura máxima da imagem */
+}
+
+/* Estilos para dispositivos com largura de tela de até 768 pixels */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column; /* Altera a direção do flexbox para coluna */
+    }
+
+    .habilidades {
+        border: none; /* Remove a borda */
+    }
+
+    .habilidades > img {
+        padding: 0.5vh; /* Reduz o espaçamento entre as imagens */
+    }
+}

@@ -1,0 +1,72 @@
+.fundo{
+    background:linear-gradient(#ffffff, #bebebe);
+}
+/* Estilos gerais */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 1rem;
+}
+
+/* Estilos para âncoras */
+a {
+    background-color: rgb(0, 89, 255); /* Fundo cinza */
+    color: white; /* Texto branco */
+    padding: 10px 20px; /* Espaçamento interno */
+    text-decoration: none; /* Remove sublinhado padrão */
+    border-radius: 5px; /* Borda arredondada */
+    display: inline-block; /* Exibir como bloco */
+    transition: background-color 0.3s; /* Transição suave */
+    position: fixed; /* Fixa a posição */
+    bottom: 20px; /* Distância do fundo */
+    right: 20px; /* Distância da direita */
+    z-index: 999; /* Garante que fique sobre outros elementos */
+}
+
+a:hover {
+    background-color: darkgray; /* Altera a cor de fundo ao passar o mouse */
+}
+
+
+/* Estilos específicos para dispositivos menores */
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}

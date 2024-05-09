@@ -1,0 +1,139 @@
+.fundo{
+    background:linear-gradient(#ffffff, #bebebe);
+}
+
+/* Estilos para a tabela */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    overflow-x: auto;
+  }
+  
+  .table th, .table td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .table th {
+    background-color: #f2f2f2;
+  }
+  
+  /* Estilos para linhas ímpares */
+  .table tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Estilos para o cabeçalho */
+  .table thead th {
+    background-color: #333;
+    color: white;
+  }
+  
+  /* Estilos para a primeira coluna */
+  .table th:first-child, .table td:first-child {
+    border-left: none;
+  }
+  
+  /* Estilos para a última coluna */
+  .table th:last-child, .table td:last-child {
+    border-right: none;
+  }
+  
+  /* Estilos para hover */
+  .table tbody tr:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Estilos para tornar a tabela responsiva */
+  @media screen and (max-width: 600px) {
+    .table {
+      overflow-x: auto;
+      display: block;
+    }
+    .table thead, .table tbody, .table th, .table td, .table tr {
+      display: block;
+    }
+    .table tbody tr {
+      border: none;
+      border-bottom: 1px solid #dddddd;
+    }
+    .table tbody tr:nth-child(odd) {
+      background-color: transparent;
+    }
+    .table tbody tr:nth-child(even) {
+      background-color: transparent;
+    }
+    .table tbody td {
+      text-align: left;
+      padding-left: 50%;
+      position: relative;
+    }
+    .table tbody td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 0;
+      width: 50%;
+      padding-left: 15px;
+      font-weight: bold;
+    }
+  }
+  /* Estilo para a lista ordenada */
+ol {
+    margin-top: 20px;
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+/* Estilo para os itens da lista ordenada */
+ol li {
+    margin-bottom: 10px;
+}
+
+/* Estilo para a lista não ordenada */
+ul {
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+/* Estilo para os itens da lista não ordenada */
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Estilo para os links na lista */
+ul li a {
+    text-decoration: none;
+    color: #007bff; /* Azul, você pode ajustar para a cor desejada */
+}
+/* Estilo para os links na lista */
+ul li a {
+    text-decoration: none;
+    color: #ffffff; /* Azul, você pode ajustar para a cor desejada */
+    transition: color 0.3s; /* Transição suave de cor */
+}
+
+/* Estilo para o link de contato */
+a {
+    background-color: rgb(0, 89, 255); /* Fundo cinza */
+    color: white; /* Texto branco */
+    padding: 10px 20px; /* Espaçamento interno */
+    text-decoration: none; /* Remove sublinhado padrão */
+    border-radius: 5px; /* Borda arredondada */
+    display: inline-block; /* Exibir como bloco */
+    transition: background-color 0.3s; /* Transição suave */
+    position: fixed; /* Fixa a posição */
+    bottom: 20px; /* Distância do fundo */
+    right: 20px; /* Distância da direita */
+    z-index: 999; /* Garante que fique sobre outros elementos */
+}
+
+a.contato:hover {
+    background-color: #0056b3; /* Azul mais escuro, você pode ajustar para a cor desejada */
+}
+
+/* Efeito de destaque do link de âncora ao passar o mouse sobre ele */
+ul li a:hover {
+    color: #000000; /* Mudança para uma cor mais escura quando o mouse está sobre o link */
+}
